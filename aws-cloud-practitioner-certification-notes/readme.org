@@ -1,0 +1,1557 @@
+* Exam checklist
+
+- Read ELB FAQs
+- Read S3 FAQs
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       CB1C6945-E330-4DF4-B158-E1A54598E696
+  :DRILL_LAST_INTERVAL: 0.0
+  :DRILL_REPEATS_SINCE_FAIL: 1
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 1
+  :DRILL_AVERAGE_QUALITY: 1.0
+  :DRILL_EASE: 2.5
+  :DRILL_LAST_QUALITY: 1
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:24]
+  :END:
+What are the advantages of cloud computing?
+
+** Answer
+6 advantages: 
+
+- Trade capital expense for variable expense
+- Stop guessing about capacity
+- Increase speed and agility
+- Stop spending money running and maintaining data centers
+- Go global in minutes
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       8A6DBCD3-8DC9-4D22-8880-4C85AFBB3978
+  :END:
+What are the types of cloud computing?
+
+** Answer
+- Infrastructure as a Service (IaaS)
+- Platform as a Service (PaaS)
+- Software as a Service (Software as a Service)
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       9DB9A060-3375-426D-BD7D-B6E9488F9F42
+  :END:
+What are the models of computing deployment?
+
+** Answer
+
+- Public
+- Hybrid
+- On-premises
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       4CD5C268-64A4-408A-9AA7-DC24AE52DF1D
+  :END:
+What is S3 and what does it mean?
+
+** Answer
+S3 stands for Simple Storage Service.
+
+S3 is on object storage with a simple web interface to store and 
+retrieve any amount of data from anywhere on the web. 
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       EA24B3A8-02C7-4E00-A865-C63BE97D68C3
+  :END:
+What are some usages of S3?
+
+** Answer
+You can use Amazon S3: 
+- as primary storage for cloud-native applications
+- as a bulk repository, or "data lake," for analytics
+- as a target for backup and recovery and disaster recovery
+- with serverless computing. 
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       629E7723-D5B4-42D5-AE81-637E0AB80033
+  :END:
+What are the features of S3?
+
+** Answer
+
+9 features:
+
+- Simple: easy-to-use web based management console + REST API
+- Durable: your data is redundantly stored across multiple facilities and multiple devices in each facility
+- Scalable: you can store as much data as you want and access it 
+when needed.
+- Secure: Amazon S3 supports data transfer over SSL and automatic encryption of your data once it is uploaded. You can also configure bucket policies to manage object permissions and control access to your data using IAM
+- Available: designed for up to 99.99% availability of objects over a given year and is backed by the Amazon S3 Service Level Agreement ensuring that you can rely on it when needed. 
+- Low cost: Using lifecycle policies, you can set policies to automatically migrate your data to Standard - Infrequent Access and Amazon Glacier as it ages to further reduce costs
+- Simple data transfer: Amazon provides multiple options for
+cloud data migration and makes it simple and cost-effective for you to move large volumes of data into or out of Amazon S3. You can choose from network-optimized, physical disk-based, or third-party connector methods for import to or export from Amazon S3
+- Integrated: Amazon S3 is deeply integrated with other AWS services to make it easier to build solutions that use a range of AWS services
+- Easy to manage: Amazon S3 Storage Management features allow you to take a data-driven approach to storage optimization, data security, and management efficiency. These enterprise-class capabilities give you data about your data, so you can manage your storage based on that personalized metadata.
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       7BB785B6-6219-4E84-A0AC-0A4D9FE45266
+  :END:
+What is AWS CloudFront?
+
+** Answer
+
+CloudFront is a global content delivery network (CDN) service that accelerates delivery of your websites, APIs, video content, 
+or other web assets.
+
+Amazon CloudFront can be used to deliver your entire website, including dynamic, static, 
+streaming, and interactive content using a global network of edge locations. Requests for your 
+content are automatically routed to the nearest edge location, so content is delivered with the best possible performance. 
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       60FFFAB4-3BAC-48B9-8A6A-2B056C5816C1
+  :END:
+What is AWS EC2?
+
+** Answer
+ 
+EC2 stands for Amazon Elastic Compute Cloud. 
+It is a web service that provides secure, resizable =compute capacity= in the cloud. 
+It is designed to make web-scale computing easier for developers.
+
+* Question :drill:
+  SCHEDULED: <2018-10-30 Tue>
+  :PROPERTIES:
+  :ID:       0304225C-2044-4D56-88D4-D41CA731D385
+  :DRILL_LAST_INTERVAL: 3.86
+  :DRILL_REPEATS_SINCE_FAIL: 2
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 0
+  :DRILL_AVERAGE_QUALITY: 3.0
+  :DRILL_EASE: 2.36
+  :DRILL_LAST_QUALITY: 3
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:28]
+  :END:
+What is a region?
+
+** Answer
+A Region is a physical location in the world where we have multiple Availability Zones (AZs).
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       86258623-030A-422A-9016-178A63924152
+  :END:
+What is an Availability Zones ?
+
+** Answer
+AZs consist of one or more discrete data centers, each with redundant power, networking,and connectivity, housed in separate facilities.
+* Question :drill:
+  :PROPERTIES:
+  :ID:       C1CF7CE0-C550-481B-9614-1677AC81F403
+  :END:
+What is an Edge Location?
+
+** Answer
+Edge Locations are endpoints for AWS which are used for caching content.
+
+Typically this consists of CloudFront, Amazon's content delivery network.
+
+There are many more Edge Locations than Regions. Currently there are over 96 EL.* Question :drill:
+What is the difference between a region, an Availability Zone and an Edge Location?
+
+** Answer
+
+- A region is a physical location in the World which consists of two or more Availability Zones.
+- An AZ is one or more discrete data centers, each with redundant power, networking and connectivity, 
+housed in separate facilities
+- Edge locations are endpoints for AWS which are used for caching content.
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       46FD8497-7C0C-4AF2-BFBC-BF29E8B784E3
+  :END:
+What is IAM?
+
+** Answer
+Essentially, IAM allows you to manage users and their level of access to the AWS Console.
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       1AFB045A-5F8A-497A-9209-A4FA9378AD0B
+  :END:
+Critical terms of IAM?
+
+** Answer
+- Users - End Users (think people)
+- Groups - A collection of Users under one set of permissions
+- Roles - You create roles and can then be assign them to AWS resources
+- Policies - A document that defines one (or more permissions). Can be attached to User/Group/Role.
+
+
+* Question :drill:
+  SCHEDULED: <2018-11-06 Tue>
+  :PROPERTIES:
+  :ID:       F589974E-C2D7-48C9-9CB4-A0B19122F27F
+  :DRILL_LAST_INTERVAL: 11.1407
+  :DRILL_REPEATS_SINCE_FAIL: 3
+  :DRILL_TOTAL_REPEATS: 2
+  :DRILL_FAILURE_COUNT: 0
+  :DRILL_AVERAGE_QUALITY: 5.0
+  :DRILL_EASE: 2.7
+  :DRILL_LAST_QUALITY: 5
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:17]
+  :END:
+  :LOGBOOK:
+  - Rescheduled from "[2018-10-21 Sun]" on [2018-10-26 Fri 10:17]
+  :END:
+Is IAM Global?
+
+** Answer
+Yes
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       F0D9F1FC-2B59-4CD5-A73D-B3B02A460A41
+  :DRILL_LAST_INTERVAL: 0.0
+  :DRILL_REPEATS_SINCE_FAIL: 1
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 1
+  :DRILL_AVERAGE_QUALITY: 0.0
+  :DRILL_EASE: 2.5
+  :DRILL_LAST_QUALITY: 0
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:18]
+  :END:
+What is the root account?
+
+** Answer
+This is the email address used to sign up in AWS.
+Unlimited access to do things in the cloud.
+* Question :drill:
+  :PROPERTIES:
+  :ID:       0D199486-7D71-42B9-9126-E23CE5F49D2E
+  :END:
+Which permissions have new users when created?
+
+** Answer
+New users have NO permissions when first created
+* Question :drill:
+  :PROPERTIES:
+  :ID:       74F512B9-2F7C-42BD-813C-A49A933289D3
+  :END:
+What is the difference between access keys and user/pass?
+
+** Answer
+You cannot use the Access Key ID and Secret Key to login in the console. You can use this to access AWS via the APIs and CLI however.
+
+
+* Question                                                            :drill:
+  :PROPERTIES:
+  :ID:       F19C81E5-C771-4239-9CF4-25650211093E
+  :END:
+What is S3?
+
+** Answer
+
+S3 provides developpers and IT teams with secure, durable, highly-scalable object storage. Amazon S3 is easy to use, with a simple web service 
+interface to store and retrieve any amount of data from anywhere on the web.
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       44EC84DD-50AF-4056-8070-D5EA4B7F1478
+  :END:
+Size of the files on S3?
+
+** Answer
+From 0 Bytes to 5 TB
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       03686A6C-4A12-44C2-8BDB-338A501B5161
+  :END:
+What is the data consistency model for S3?
+
+** Answer
+- Read after Write consistency for PUTS of new Objects
+- Eventual Consistency for overwrite PUTS and DELETES (can take some time to propagate)
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       333D4266-8DA0-40B4-8DCC-F83712E76BAD
+  :DRILL_LAST_INTERVAL: 0.0
+  :DRILL_REPEATS_SINCE_FAIL: 1
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 1
+  :DRILL_AVERAGE_QUALITY: 1.0
+  :DRILL_EASE: 2.5
+  :DRILL_LAST_QUALITY: 1
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:23]
+  :END:
+S3 is object based. What do objects consist of?
+
+** Answer
+- key (This is the name of the object)
+- value (This is the data and is made up of a sequence of bytes)
+- version ID (very important for versioning)
+- metadata (data about data you are storing)
+- subresources:
+  - Access Control Lists
+  - Torrent (not an exam topic)
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       377E31FA-8BCE-43C4-B049-BE42764A4790
+  :END:
+What are the different Tiers/Classes of storage for S3?
+
+** Answer
+- S3 standard : 99.99% availability, 99.999999999% durability, stored redundantly across multiple devices in multiple facilities, and is 
+designed to sustain the loss of 2 facilities concurrently. No retrieval fees
+
+- S3 - IA (Infrequently Accessed) : For data that is accessed less frequently, but requires rapid access when needed. Lower fee than S3, but you are 
+charged a retrieval fee.
+
+- S3 One Zone - IA : want a lower cost option for infrequently accessed data, but do not require the multiple AZ data resilience.
+
+- Glacier : Very cheap, but used for archival only. Expedited (higher fees less retrieval time -- within minutes),
+ Standard (3-5 hours) or Bulk (5-12 hours).
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       E2BFA5CE-8758-41DF-B7F3-BFD81CF20BB4
+  :END:
+S3 Charges?
+
+** Answer
+Charged for 
+- Storagex
+- Requests
+- Storage Management Pricing (the tags you use on your data, added on the metadat of your files)
+- Data Transfer Pricing (when you transfer data from one region to another)
+- Transfer Acceleration
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       E1B7A950-296D-4A95-8C3E-24EF607A04EB
+  :END:
+What is S3 Transfert Acceleration?
+
+** Answer
+Amazon S3 Transfert Acceleration enables fast, easy, and secure transferts of files over long distances between your end users and an S3 bucket. 
+
+Transfert Acceleration takes advantage of Amazon CloudFront's globally distributed edge locations. As the data arrives at an edge location, data 
+is routed to Amazon S3 over an optimized path.
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       B3912606-C852-42A4-B4A0-CC9494688F0C
+  :END:
+What are the server side encryption options for S3?
+
+** Answer
+- SSE with Amazon S3 Managed Keys (SSE-S3)
+- SSE with KMS (SSE-KMS)
+- SSE with Customer Provided Keys (SSE-C)
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       DBE2D60E-D23F-47F0-ABD0-708D5D387EBD
+  :END:
+What are the two options for controlling access to a S3 bucket?
+
+** Answer
+- Bucket ACL
+- Bucket Policies
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       FDC4C889-89ED-4B0C-B889-C9BA8C2D33A2
+  :END:
+S3 Versioning characteristics?
+
+** Answer
+- Stores all versions of an object (including all writes and even if you delete an object)
+- Great backup tool
+- Once enabled, versioning cannot be disabled, only suspended
+- Integrates with Lifecycles rules
+- Versioning's MFA Delete capability, which uses multi-factor authentication, can be used to provide an additional layer of security.
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       3F4E75AA-2046-4366-88C5-87B59A2F6536
+  :END:
+Cross replication on S3?
+
+** Answer
+- Versioning must be enabled on both the source and destination buckets
+- Regions must be unique
+- Files in an existing bucket are not replicated automatically. All subsequent updated files will be replicated automatically.
+- You cannot replicate to multiple buckets or use daisy chaining (at this time)
+- Delete markers are replicated
+- Deleting individual versions or delete markers will not be replicated
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       AB7EEBA1-3296-4FC3-B5A6-983A567ACAE3
+  :END:
+Lifecycle Management in S3?
+
+** Answer
+- Can be used in conjunction with versioning
+- Can be applied to current versions and previous versions
+- Following actions can now be done:
+  - Transition to the Standard IA storage class
+  - Archive to Glacier Storage Class
+  - Permanently Delete
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       98FAFC49-DA11-40C4-85AB-5548E5C5D1E1
+  :DRILL_LAST_INTERVAL: 0.0
+  :DRILL_REPEATS_SINCE_FAIL: 1
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 1
+  :DRILL_AVERAGE_QUALITY: 0.0
+  :DRILL_EASE: 2.5
+  :DRILL_LAST_QUALITY: 0
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:27]
+  :END:
+What is a CDN?
+
+** Answer
+A content delivery network (CDN) is a system of distributed servers (network) that deliver webpages and other web content to a user
+based on the geographic locations of the user, the origin of the webpage and a content delivery server.
+
+
+AWS CloudFront can be used to deliver your entire website, including dynamic, static, streaming, and interactive content using a global 
+network of edge locations. Requests for your content are automatically routed to the nearests edge location, so content is delivered with
+the best possible performance.
+
+Amazon CloudFront is optimized to work with other Amazon Web Services, like S3, EC2, ELB and route 53. Amazon CloudFront also works seamlessly
+with any non-AWS origin server, which stores the original, definitive version of your files.
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       080E2187-7DF4-46B9-82BE-BD4453CE061A
+  :END:
+What is a distribution (CloudFront)?
+
+** Answer
+This is the name given to the CDN which consists of a collection of Edge Locations.
+  - Web distribution - Typically used for websites
+  - RTMP - Used for Media Streaming
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       51A04339-26EF-4482-9D67-FB20404896C6
+  :DRILL_LAST_INTERVAL: 0.0
+  :DRILL_REPEATS_SINCE_FAIL: 1
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 1
+  :DRILL_AVERAGE_QUALITY: 0.0
+  :DRILL_EASE: 2.5
+  :DRILL_LAST_QUALITY: 0
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:22]
+  :END:
+What can you use Edge location for ?
+
+** Answer
+- EL are not just for READ only, you can write to them too.
+- Objects are cached for the life of the TTL
+- You can clear cached objects but you will be charged.
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       FD97CAF8-C164-4702-B0B4-79FFA9091D27
+  :END:
+What is the default policy on newly created buckets?
+
+** Answer
+By default all newly created buckets are PRIVATE
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       48E4749F-B70E-4CC6-B0C5-7B481FF4CBF7
+  :END:
+How can you setup access control to your buckets ?
+
+** Answer
+- Bucket policies
+- Access Control Lists
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       CE941DD3-6506-42D7-B949-38F18986CF14
+  :DRILL_LAST_INTERVAL: 0.0
+  :DRILL_REPEATS_SINCE_FAIL: 1
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 1
+  :DRILL_AVERAGE_QUALITY: 2.0
+  :DRILL_EASE: 2.5
+  :DRILL_LAST_QUALITY: 2
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:23]
+  :END:
+How can you see accesses to your s3 bucket ?
+
+** Answer
+S3 buckets can be configured to create access logs which log all requests made to the S3 bucket. This can be done to another bucket or even
+to another AWS account.
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       38851237-3F84-4DEF-9C04-5EAE16D5A0EF
+  :DRILL_LAST_INTERVAL: 0.0
+  :DRILL_REPEATS_SINCE_FAIL: 1
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 1
+  :DRILL_AVERAGE_QUALITY: 0.0
+  :DRILL_EASE: 2.5
+  :DRILL_LAST_QUALITY: 0
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:26]
+  :END:
+What are the two types of encryption on S3?
+
+** Answer
+- In Transit: when you are sending data to your bucket
+  - SSL/TLS
+- At Rest 
+  - Server Side Encryption 
+    - S3 Managed Keys - SSE-S3 each bucket is encrypted with a unique key Amazon encrypt the key itself with a master key that is regularly rotated.
+      Amazon handles all the keys for you (AES 256)
+    - AWS Key Management Service, Managed Keys - SSE-KMS Similar to SSE-S3 with some additional benefits s.a. who is decrypting what and when + option to manage the keys yourself.
+    - Server Side Encryption with Customer Provided Keys - SSE-C where your manage your keys and AWS is responsible for the encryption and decryption.
+  - Client Side Encryption
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       32AE9C0A-E9EF-4DE7-950D-89D82DBA1F3B
+  :DRILL_LAST_INTERVAL: 0.0
+  :DRILL_REPEATS_SINCE_FAIL: 1
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 1
+  :DRILL_AVERAGE_QUALITY: 0.0
+  :DRILL_EASE: 2.5
+  :DRILL_LAST_QUALITY: 0
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:25]
+  :END:
+What is Amazon Storage Gateway?
+
+** Answer
+AWS Storage Gateway is a service that connects an on-premises software appliance with cloud-based storage to provide seamless and secure 
+integration between oragnization's on-premises IT environment and AWS's storage infrastructure. The service enables you to securely store 
+data to the AWS cloud for scalable and cost-effective storage.
+
+
+AWS Storage Gateway's software appliance is available for download as a virtual machine image that you install on a host in your datacenter.
+Storage Gateway supports either VMWare ESXi or Microsoft Hyper-V. Once you've installed your gateway and associated it with your AWS account through 
+the activation process you can use the AWS Management Console to create the storage gateway option that is right for you.
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       E9D6D24B-250E-4EF1-A2D4-63BE987B1DBC
+  :END:
+What are the four types of storage gateway?
+
+** Answer
+- File Gateway (NFS) - allows to store files directly on S3.
+- VolumeS Gateway (iSCSI) - virtual hard disk where you have a VM running on / SQL server -- it's not for flat files
+  - Stored Volumes store your dataset on your on premise
+  - Cached Volumes store only your most accessed data on your on premise 
+- Tape Gateway (VTL) an archiving solution allows you to create virtual tapes then send them to S3 and then you can use lifecycle policies to send them to Glacier.
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       DF5F34B8-6567-4FA0-BE9C-4360285FF7E1
+  :END:
+How does File Gateway work?
+
+** Answer
+Files are stored as objects in your S3 buckets, accessed through a Network File System (NFS) mount point.
+
+Ownership, permissions, and timestamps are durably stored in S3 in the user metadata of the object associated with the file. Once objects are 
+transfered to S3, they can be managed as native S3 objects, and bucket policies such as versioning, lifecycle management, and cross-region 
+replication apply directly to objects stored in your bucket.
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       F2FDC17F-2337-4EED-AC7D-51EA26A69E16
+  :DRILL_LAST_INTERVAL: 0.0
+  :DRILL_REPEATS_SINCE_FAIL: 1
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 1
+  :DRILL_AVERAGE_QUALITY: 0.0
+  :DRILL_EASE: 2.5
+  :DRILL_LAST_QUALITY: 0
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:19]
+  :END:
+Volume Gateway?
+
+** Answer
+The volume interface presents your applications with disk volumes using the iSCSI block protocol.
+
+Data written to these volumes can be asynchronously backed up as point-in-time snapshots of your volumes, and stored in the cloud as Amazon EBS snaps.
+
+Snapshots are incremental backups that capture only changed blocks. All snapshot storage is also compressed to minimize your storage charges.
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       88546BCF-A277-4300-9020-D6429663CC9B
+  :END:
+Volume Gateway - Stored Volumes?
+
+** Answer
+Stored volumes let you store your primary data locally, while asynchronously backing up that data to AWS.
+Stored volumes provide your on premises applications with low-latency access to their entire datasets, while providing durable, off-site backups.
+You can create storage volumes and mount them as iSCSI devices from your on-premises storage hardware. This data is asynchronously backed up to 
+Amazon Simple Storage Service in the form of Amazon Block Store (EBS) snapshots. 1Gb - 16Tb in size for Stored Volumes.p
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       748CF6C1-1943-46A5-9613-81D9BB13FA65
+  :END:
+Volume Gateway - Cached Volumes?
+
+** Answer
+Cached volumes let you use Amazon Simple Storage Service as your primary data storage while retaining frequently accessed data locally in
+your storage gateway. Cached volumes minimize the need to scale your on-premises storage infrastructures, while still providing your 
+applications with low-latency access to their frequently accessed data. You can create storage volumes up to 32Tb in size and attach to the as iSCSI
+devices from your on-premises application servers. Your gateway stores data that you write to these volumes in Amazon S3 and retains recently read 
+data on your on-premises storage gateway's cache and upload buffer storage. 1Gb-32Tb in size cached volumes.
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       0F05B815-FD68-4A35-A528-27DD3A85AC09
+  :END:
+Volume Gateway - Tape Gateway?
+
+** Answer
+Tape Gateway offers durable, cost-effective solution to archive your data in the AWS cloud. The VTL interface it provides lets you leverage 
+your existing tape-based backup application infrastructure to store data on a virtual tape cartridges that you create on your tape gateway. 
+Each tape gateway is preconfigured with a media changer and tape drives, which are available to your existing client backup applications 
+as iSCSI devices. You add tape cartridges as you need to archive your data. Supported by NetBackup, Backup Exec, Veeam etc.
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       17757C21-F03B-48E6-8744-CAD3F57C7F42
+  :END:
+What is Snowball?
+
+** Answer
+Snowball is a petabyte-scale data transport solution that uses secure appliances to transfer large amounts of data into and out of AWS.
+Using Snowball addresses common challenges with large scale data transferts including high network costs, long transfer times, and security concerns.
+Trtansferring data with Snowball is simple, fast, secure and can be as little as one fifth the cost of high-speed internet.
+
+80TB Snowball in all regions. Snowball uses multiple layes of security designed to protect your data including tamper-resistant enclosures, 256-bit
+encryption, and an industry standard Trusted Platform Module (TPM) designed to ensure both security and full chain-of-custody of your data. 
+Once the data transfer job has been processed and verified, AWS performs a software erasure of the Snowball appliance.
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       BE4B4581-8057-4708-9964-0D50BF9F74DE
+  :END:
+What is Snowball Edge?
+
+** Answer
+AWS Snowball Edge is a 100TB data transfer device with on-board storage and compure capabilities. You can use Snowball Edge to move large amounts
+of data into and out of AWS, as a temporary storage tier for large local datasets, or to support local workloads in remote or offline locations. 
+
+Snowball Edge connects to your existing applications and infrastructure using standard interfacesm streamlining the data transfer process 
+and minimizing setup and integration. Snowball Edge can cluster together to form a local storage tier and process your data on-premises, 
+helping ensure your applications continue to run even when they are not able to access the cloud.
+
+It's storage AND compute capacity.
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       C1BA4A2E-AF5E-4FE8-9021-6C3E25CFD7B8
+  :DRILL_LAST_INTERVAL: 0.0
+  :DRILL_REPEATS_SINCE_FAIL: 1
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 1
+  :DRILL_AVERAGE_QUALITY: 1.0
+  :DRILL_EASE: 2.5
+  :DRILL_LAST_QUALITY: 1
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:27]
+  :END:
+What is Snowmobile?
+
+** Answer
+AWS Snowmobile is an Exabyte-scale data transfewr service used to move extremely large amounts of data to AWS. You can transfer up to 100PB 
+per Snowmobilem a 45-foot long ruggedized shipping contained, pulled by a semi-trailer truck. Snowmobile makes it easy to move massive volumes of data 
+to the cloud, including video libraries, image repositories, or even a complete data center migration. Transferring data with Snowmobile is secure,
+fast and cost effective.
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       18E7B49C-3DA3-4984-8724-EDA0ACD922B5
+  :END:
+What is S3 Transfer Acceleration?
+
+** Answer
+S3 Transfer Acceleration utilises the CloudFront Edge Network to accelerate your uploads to S3. Instead of uploading directly to your S3 bucket,
+you can use a distinct URL to upload directly to an edge location which will then transfer that file to S3. You will get a distinct URL to upload it.
+
+<BUCKET>.s3-accelerate.amazonaws.com
+
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       2CCC97A3-8B6F-4707-A47D-D14A0EA09EE8
+  :END:
+What is EC2?
+
+** Answer
+Amazon Elastic Compute Cloud (EC2) is a web service that provides resizable compute capacity in the cloud. Amazon EC2 reduces the time required 
+to obtain and boot new server instances to minutes, allowing you to quickly scale capacity, both up and down, as your computing requirements change.
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       23456533-4D45-4AE4-BC03-E3B4EE1E7F53
+  :END:
+What are the EC2 options?
+
+** Answer
+- On demand: llows you to pay a fixed rate by the hour (or by the second) with no commitment.
+- Reserved: provides you with a capacity reservation, and offer a significant discount on the hourly charge for an instance. 1 year or 3 years terms.
+- Spot: Enables you to bid whatever price you want for instance capacity, providing for even greater savings if your applications have flexible 
+start and end times.
+- Dedicated Hosts: Physical EC2 server dedicated for your use. Dedicated Hosts can help you reduce costs by allowing you to use your existing 
+server-bound software licences.
+
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       338D6A7D-22BE-4FEB-B2D7-580E4D011B1E
+  :END:
+Use cases for EC2 on demand?
+
+** Answer
+- Perfect for users that want the low cost and flexibility of Amazon EC2 without any up-front payment or long-term commitment.
+- Applications with short-term, spiky, or unpredictable workloads that cannot be interrupted.
+- Applications being developed or tested on Amazon EC2 for the first time.
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       31487EAA-56A2-4D1D-A214-E5089E498F7E
+  :END:
+Use cases for reserved instances ?
+
+** Answer
+- Applications with steady states or predictable usage
+- Applications that require reserved capacity
+- Users can make up-front payments to reduce their total computing costs even further
+  - Standard RIs (Up to 75% off on-demand)
+  - Convertible RIs (Up to 54% off on-demand) feature the capability to change the attributes of RI as long as the exchange results in the creation
+    of reserved instances of equal or greater value.
+  - Schedule RIs are available to launch within the time window you reserve. This allows you to match your capacity reservation to a predictable
+    recurring schedule that only require a fraction of a day/week/month.
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       121555AE-383A-4F0A-8B83-EC02C36D0CC9
+  :DRILL_LAST_INTERVAL: 0.0
+  :DRILL_REPEATS_SINCE_FAIL: 1
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 1
+  :DRILL_AVERAGE_QUALITY: 0.0
+  :DRILL_EASE: 2.5
+  :DRILL_LAST_QUALITY: 0
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:22]
+  :END:
+Spot instances use cases?
+
+** Answer
+- Applications that have flexible start and end times
+- Applications that are only feasible at very low compute prices
+- Users with an urgent need for large amounts of additional computing capacity
+- If a spot instance is terminated by Amazon EC2, you will not be charged for a partial hour of usage.
+  However if you terminate the instance yourself you will be charged for the complete hour in which the instance ran.
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       AB4BAFC5-478D-4FD5-AD58-75E670DD4707
+  :END:
+Dedicated Hosts use cases?
+
+** Answer
+- Useful for regulatory requirements that may not support multi tenant virtualization.
+- Great for licensing which does not support multi-tenancy of cloud deployments.
+- Can be purchased on demand (hourly).
+- Can be purchased as a Reservation for up to 70% off the on-demand price.
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       915091D8-766E-48BC-8AFC-585AF42099B2
+  :END:
+EC2 Instance types?
+
+** Answer
+F->FPGA
+I->IOPS
+G->Graphics
+H->High Disk Throughtut
+T->Cheap General Purpose 
+D-> Density
+R->Ram
+M->Main choice for general purpose
+C->Compute
+P->Graphics
+X->Extreme Memory
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       018820BC-F039-4515-ADB9-82674C1B4AFB
+  :DRILL_LAST_INTERVAL: 0.0
+  :DRILL_REPEATS_SINCE_FAIL: 1
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 1
+  :DRILL_AVERAGE_QUALITY: 2.0
+  :DRILL_EASE: 2.5
+  :DRILL_LAST_QUALITY: 2
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:21]
+  :END:
+What is EBS?
+
+** Answer
+Amazon EBSallows you to create storage volumes and attach them to Amazon EC2 instances. Once attached, you can create a file system on top of these
+volumes, run a database, or use them in any way you would use a block device. Amazon EBS volumes are placed in a specific AZ, where they are 
+automatically replicated to protect you from the failure of a single component.
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       C7AE05A2-BBCF-4DA8-BBD9-A8C2E98D7316
+  :END:
+EBS volume types?
+
+** Answer
+- General Purpose SSD (GP2)
+  - balances both price and performance.
+  - Ratio of 3 IOPS per GB with up to 10,000 IOPS and the ability to burst up to 3000 IOPS for extended periods of time for volumes at 3334 GB and above.
+- Provisioned IOPS SSD (IO1)
+  - Designed for I/O intensive applications such as large relational or NOSQL databases.
+  - Use if you need more than 10,000 IOPS
+  - Can provisioned up to 20,000 IOPS per volume
+- Throughtput optimized HDD (ST1)
+  - Big Data
+  - Data warehouses
+  - Log processing
+  - Cannot be a boot volume
+- Cold HDD (SC1)
+  - Lowest Cost Storage for infrequently accessed workloads
+  - File server
+  - cannot be a boot volume
+- Magnetic (standard)
+  - Lowest cost er gigabyte of all EBS volume types that is bootable. Magnetic volumes are ideal for workloads where data is accessed infrequently, 
+    and applications where the lowest storage cost is important.
+
+
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       A12F4215-48CE-43D0-B2FC-3DFF488F42AF
+  :END:
+What is the default for Termination Protection on EC2?
+
+** Answer
+Termination Protection is turned off by default
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       57C59EFB-BC78-4AFD-8B0D-9005028D2476
+  :END:
+When an instance is terminated, what is the default for the root EBS?
+
+** Answer
+The default action is for the root EBS to be deleted when the instance is terminated
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       101BEE9D-B086-4AC4-8663-A14CD49E1920
+  :END:
+Can you encrypt the EBS root volume of your default ami's ?
+
+** Answer
+By default no. But you can create your own AMI's in the AWS console or using the API.
+
+Additional volumes CAN be encrypted
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       B0450FA6-A71A-4987-B615-A07BDFBBF474
+  :END:
+What is a security group?
+
+** Answer
+A security group is basically a firewall that control access to your EC2 instances.
+
+1 instance can have multiple security groups.
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       A4228EA7-63E7-40E9-84C5-A25F9895D40F
+  :END:
+Security Groups - inbound traffic default?
+
+** Answer
+All inbound traffic is blocked by default
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       3C1B9D13-7DAC-4369-BA50-C6F55BCAEF6D
+  :END:
+Scurity Groups - outbound traffic default?
+
+** Answer
+All outbound traffic is allowed by default
+
+* Question :drill:
+  SCHEDULED: <2018-10-30 Tue>
+  :PROPERTIES:
+  :ID:       F49F3067-60DB-42B3-8E13-7947BE7549EB
+  :DRILL_LAST_INTERVAL: 4.14
+  :DRILL_REPEATS_SINCE_FAIL: 2
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 0
+  :DRILL_AVERAGE_QUALITY: 5.0
+  :DRILL_EASE: 2.6
+  :DRILL_LAST_QUALITY: 5
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:26]
+  :END:
+How much time does it take for change to security groups to propagate?
+
+** Answer
+Changes take effect immediately
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       99F0DFE1-D13D-43A5-97E4-EA851C554CFF
+  :END:
+How many EC2 instances can I have per Security Group?
+
+** Answer
+As much as I want
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       898A2041-44A9-4568-8C77-F562104B3B5D
+  :END:
+How many Security Group can I attach to an EC2 ?
+
+** Answer
+You can have multiple SG attached to EC2 instances 
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       CDFAFB92-2FC5-4FCF-B5B1-49C0096449CA
+  :END:
+Security Groups are STATEFUL what does it means?
+
+** Answer
+If you create an inbound rule allowing traffic in, that traffic is automatically allowed to back out again.
+
+* Question :drill:
+  SCHEDULED: <2018-10-30 Tue>
+  :PROPERTIES:
+  :ID:       89760F90-C25A-40C4-9E11-ADED277BE923
+  :DRILL_LAST_INTERVAL: 3.86
+  :DRILL_REPEATS_SINCE_FAIL: 2
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 0
+  :DRILL_AVERAGE_QUALITY: 3.0
+  :DRILL_EASE: 2.36
+  :DRILL_LAST_QUALITY: 3
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:27]
+  :END:
+Can you block a specific IP address using security groups ?
+
+** Answer
+No, instead use Network Access Control Lists
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       038EEC78-8F91-487B-92B6-BBBFBACE95AB
+  :END:
+Can you specify deny rules using Security Groups?
+
+** Answer
+No, you can specify allow rules but not deny rules.
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       3A146AAA-AAF4-4B4B-9BBA-95A30C7ED1E5
+  :END:
+Where are EBS snapshots stored?
+
+** Answer
+They are stored on S3 though you can't see them in the console.
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       4BF28883-739E-468A-B2A9-4C20CBEB34F9
+  :END:
+What are EBS snapshots?
+
+** Answer
+They are point in time copies of volumes.
+
+Snapshots are incremental - this means that only the blocks that have changed since your last snapshot are moved to S3.
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       418F6FAB-EB16-400B-929B-8F904240A2C6
+  :END:
+Can I create a snapshot of my root volume?
+
+** Answer
+Yes. You should stop the instance before taking the snapshot. However you can take a snap while the instance is running.
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       371CC771-18AC-4323-96D6-957E818EEF61
+  :DRILL_LAST_INTERVAL: 0.0
+  :DRILL_REPEATS_SINCE_FAIL: 1
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 1
+  :DRILL_AVERAGE_QUALITY: 0.0
+  :DRILL_EASE: 2.5
+  :DRILL_LAST_QUALITY: 0
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:18]
+  :END:
+How can I create an AMI?
+
+** Answer
+You can create AMI's from EBS backed instances and snapshots.
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       196DDE93-3BF5-474B-B1D6-A1D33BBE9126
+  :DRILL_LAST_INTERVAL: 0.0
+  :DRILL_REPEATS_SINCE_FAIL: 1
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 1
+  :DRILL_AVERAGE_QUALITY: 1.0
+  :DRILL_EASE: 2.5
+  :DRILL_LAST_QUALITY: 1
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:19]
+  :END:
+Can I change the size of my EBS volume?
+
+** Answer
+You can change EBS volumes sizes on the fly, including changing the size and the storage type.
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       E40D436C-5960-4829-BF8F-E1EC0A8FE685
+  :END:
+Can I have a volume in a different AZ than my EC2?
+
+** Answer
+Volumes will ALWAYS be in the same AZ as the EC2 instance.
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       E7EB75C6-2FA2-41FE-B867-A33536337C50
+  :END:
+Are the snaphsots encrypted?
+
+** Answer
+Yes, snapshots are encrypted automatically
+
+Volumes restored from encrypted snapshots are also encrypted automatically
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       BE4EC2F7-84FA-4F12-9ED6-1C7576F150A4
+  :END:
+Can you share snapshots?
+
+** Answer
+Yes ONLY if they are unencrypted.
+These snapshots can be shared with other AWS accounts or made public.
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       3B8D44E3-0CD1-4B84-AA95-2A6231132E7B
+  :END:
+What are the parameters you can choose when creating your AMI?
+
+** Answer
+- Region
+- Operating System
+- Architecture (32-bit or 64-bit)
+- Launch Permissions
+- Storage for the Root Device (Root Device Volume)
+  - Instance Store (EPHEMERAL STORAGE)
+  - EBS Backed Volumes
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       A65FABBC-F381-4A3B-9CEA-70D2C2D4E515
+  :END:
+What are the differences between EBS and Instance Store AMI?
+
+** Answer
+All AMIs are categorized as either backed by Amazon EBS or backed by instance store.
+
+For EBS Volumes: The root device for an instance launched from the AMI is an Amazon EBS volume created from an Amazon EBS snapshot.
+
+For Instance Store Volumes: The root device for an instance launched from the AMI is an instance store volume created from a template stored in S3.
+
+- Instance Store Volumes are sometimes called Ephemeral Storage.
+- Instance Store Volumes cannot be stopped. If the underlying host fails, you will lose your data.
+- EBS backed instances can be stopped. You will not lose the data on this instance if it is stopped.
+- You can reboot both, you will not lose your data.
+- By default, both ROOT volumes will be deleted on termination, however with EBS volumes, you can tell AWS to keep the root device volume.
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       89A5DA81-77A3-4442-B1FE-EA53E75D8697
+  :END:
+What are the 3 types of load balancers in AWS?
+
+** Answer
+- Application Load Balancer
+- Network Load Balancer
+- Classic Load Balancer
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       86D1E4BC-A76B-49B1-AD9D-628F5810DC6E
+  :END:
+What does the 504 error mean?
+
+** Answer
+
+504 Error means the gateway has timed out. This means that the application not responding within the idle timeout period.
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       EBFDD1C7-2459-48A5-9785-28AE5B2EA346
+  :END:
+Which option do you need to look for your load balancer if you need the IPv4 of your end user?
+
+** Answer
+Look for the X-Forwarded-For Header
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       E02EB097-438F-4BD5-8666-CFD2A457710C
+  :END:
+ELB misc?
+
+** Answer
+- Instances monitored by ELB are reported as: 
+  - InService or OutofService
+- Health Checks check the instance health by talking to it
+- Have their own DNS name. You are never given an IP address
+
+
+* Question :drill:
+  SCHEDULED: <2018-10-30 Tue>
+  :PROPERTIES:
+  :ID:       C08B31A2-8D0A-453B-9143-FA87764ED7D6
+  :DRILL_LAST_INTERVAL: 4.14
+  :DRILL_REPEATS_SINCE_FAIL: 2
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 0
+  :DRILL_AVERAGE_QUALITY: 5.0
+  :DRILL_EASE: 2.6
+  :DRILL_LAST_QUALITY: 5
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:20]
+  :END:
+Can you attach a role to an EC2 instance that is running?
+
+** Answer
+Yes! But it's a new feature, in the exam the answer may be NO.
+
+
+
+* Question :drill:
+What is the Standard Monitoring timeframe?
+
+** Answer
+5 minutes
+
+* Question :drill:
+What is the Detailed Monitoring timeframe?
+
+** Answer
+1 minute
+
+* Question :drill:
+What can I do with Cloudwatch?
+
+** Answer
+- Dashboards - Creates awesome dashboards to see what is happening with your AWS environment.
+- Alarms - Allows you to set Alarns that notify you when particular thresholds are hit.
+- Events - CloudWatch Events helps you to respond to state changes in your AWS ressources.
+- Logs - CloudWatch Logs helps you to aggregate, monitor, and store logs.
+
+
+
+* Question :drill:
+What are the two types of Placement Groups ?
+
+** Answer
+- Clustered Placement Group
+- Spread Placement Group
+
+
+* Question :drill:
+What is a Clustered Placement Group?
+
+** Answer
+A Cluster Placement Group is a grouping of instances within a single AZ. Placement Groups are recommended for applications 
+that need low network latency, high network throughput, or both.
+
+Only certain instcances can be launched in to a Clustered Placement Group (Compute Optimized, Memory optimized, Storage Optimized)
+
+
+* Question :drill:
+What is a Spread Placement Group?
+
+** Answer
+A Spread Placement Group is a group of instances each placed on distinct underlying hardware.
+
+Spread Placement Groups are recommended for applications that have a small number of critical instances that should be kept separate from
+each other.
+
+A Spread Placement Group can span multiple AZ.
+
+
+* Question :drill:
+Can you have different placement groups with the same name ?
+
+** Answer
+The name you specify for a placement group must be unique within your AWS account.
+
+* Question :drill:
+Can you merge placement groups?
+
+** Answer
+No
+
+* Question :drill:
+What is the AWS recommendation for placement groups?
+
+** Answer
+AWS recommend homogeneous instances within placement groups
+
+
+* Question :drill:
+Can you move an existing instance into a placement group?
+
+** Answer
+You can't move an existing instance into a placement group. You can create an AMI from an existing instance, and then 
+launch a new instance fron the AMI into a placement group.
+
+
+* Question :drill:
+Why do we need placement groups?
+
+** Answer
+There are two types of placement groups: "Cluster", which places
+ instances into a low-latency group in a single Availability
+ Zone, and "Spread", which spreads instances across underlying hardware. 
+
+- "Cluster" placement groups are recommended for applications that benefit from low
+ network latency, high network throughput, or both, and if the
+ majority of the network traffic is between the instances in
+ the group. A "spread" placement group is a group of
+ instances that are each placed on distinct underlying hardware. 
+- "Spread" placement groups are recommended for applications that have a small
+ number of critical instances that should be kept separate from
+ each other. Granted, most of the previous information is copypasta
+ from AWS. Let's expand on this:
+
+
+One reason to use a "cluster" placement groups is that
+ you are not guaranteed 10 gigabit unless your instances are
+ in a placement group. You'd use a "cluster" placement group
+ when you need the highest possible performance for cluster computing
+. You do sacrifice redundancy since they could be on the
+ same switch or in the same rack or breaker set. Hardware does break.
+
+A "spread" placement group provides redundancy because it's place on
+ distinct hardware, which reduces the impact of hardware failures on your applications.
+
+
+
+
+* Question :drill:
+What is EFS?
+
+** Answer
+Amazon Elastic File System (Amazon EFS) is a file storage service for Amazon Elastic Cloud Compute instances.
+Amazon EFS is easy to use and provides a simple interface that allows you to create and configure file systems quickly and easily.
+With Amazon EFS, storage apacity is elastic, growing and shrinking automatically as you add and remove files, so your applications
+have the storage they need when they need it.
+
+* Question :drill:
+What are EFS features?
+
+** Answer
+- Supports the Network File System version 4 (NFSv4) protocol
+- You only pay for the storage you use (no pre-provisioning required)
+- Can scale to petabytes
+- Can support thousands of concurrent NFS connections
+- Data is stored across multiple AZs within a region.
+- Read After Write Consistency
+
+
+* Question :drill:
+What is the EFS use case?
+
+** Answer
+EFS is used as a File Server. You store files in it then you make it a central repository for multiples EC2 instances accessing the same files.
+Exemple: EC2 apache servers behind a load balancer that serve the same files. 
+
+* Question :drill:
+What is Lambda?
+
+** Answer
+AWS Lambda is a compute service where you can upload your code and create a Lambda function. AWS Lambda takes care of provisioning and managing
+the servers that you use to run the code. You don't have to worry about operating systems, patching, scaling etc. You can use Lambda in the following
+ways:
+
+- As an event-driven compute service where AWS Lambda runs your code in response to events. These events could be changes to data in an Amazon S3 
+  bucket or an Amazon DynamoDB table.
+- As a compute service to run your code in response to HTTP requests using Amazon API Gateway or API calls made using AWS SDKs. 
+
+
+* Question :drill:
+What are the triggers for Lambda?
+
+** Answer
+- API Gateway
+- AWS IoT
+- Alexa Skills Kit
+- Alexa Smart Home
+- CloudFront
+- CloudWatch Events
+- CloudWatchLogs
+- CodeCommit
+- Cognito Sync Trigger
+- DynamoDB
+- Kinesis
+- S3
+- SNS
+
+
+* Question :drill:
+What languages can I use with Lambda?
+
+** Answer
+- Node.js
+- Java
+- Python
+- C#
+- Go
+
+
+* Question :drill:
+How is Lambda Priced?
+
+** Answer
+- Number of requests
+  - First 1 million requests are free. $0.20 per 1 millon requests thereafter.
+
+- Duration
+  - Duration is calculated from the time your code begins executing until it returns or otherwise terminates, rounded up to the nearest 100ms.
+      The price depends on the amount of memory you allocate to your function. You are charged $0.00001667 for every GB-second used.
+
+
+* Question :drill:
+Which service can you use to debug your serverless architectures?
+
+** Answer
+Architectures can get extremely complicated, AWS X-ray allows you to debug what is happening.
+
+* Question :drill:
+Difference between CoudWatch and CloudTrail?
+
+** Answer
+CloudWatch is for performance monitoring, CloudTrail is for auditing.
+
+
+
+
+* Question :drill:
+Who is in controlled of top level domain names?
+
+** Answer
+Top level domain names are controlled by the Internet Assigned Numbers Authority (IANA) in a root zone database which is essentially 
+a database of all available top domains. 
+
+* Question :drill:
+What are domain registrar?
+
+** Answer
+Because all of the names in a given domain name have to be unique there needs to be a way to organize this all so that domain names aren't
+duplicated. This is where domain registrars come in. A registrar is an authority that can assign domain names directly under one or more top-level
+domains. These domains are registered with InterNIC, a service of ICANN, which enforces uniqueness of domain names across the Internet. Each domain 
+name becomes registered in a central database known as the WhoIS database.
+
+
+* Question :drill:
+What is a SOA record?
+
+** Answer
+A SOA record is information stored in a DNS zone about that zone. A DNS zone is the part of a domain for which an individual DNS server is 
+responsible (i.e. the bit that you store A records, CNAMES etc). Each zone contains a single SOA record.
+
+The SOA record (Start Of Authority) stores information about:
+- The name of the server that supplied the data for the zone
+- The administrator of a zone
+- The current version of the data file
+- The default number of seconds for the time-to-live file on resource records
+
+* Question :drill:
+What is a NS record?
+
+** Answer
+NS stands for Name Server record. They are used by Top Level Domain servers to direct traffic to the Content DNS server which contains the 
+authoritative DNS records.
+
+* Question :drill:
+What is an A record?
+
+** Answer
+An "A" record is the fundamental type od DNS record. The "A" in A record stands for "Address". The A record is used by a computer to 
+translate the name of the domain to an IP address. 
+
+
+* Question :drill:
+What is the TTL (in domain names)?
+
+** Answer
+The length that a DNS record is cached on either the Resolving Server or the users own local PC is equal to the value of the 
+"Time To Live" (TTL) in seconds. The lower the ttl, the faster changes to DNS records take to propagate thoughout the internet.
+
+* Question :drill:
+What are CNAMES?
+
+** Answer
+A Canonical Name (CName) can be used to resolve one domain name to another. For example, you may have a mobile website with the 
+domain name http://m.example.com that is used for when users browse to your domain name on their mobile devices. You may also want the name 
+http://mobile.example.com to resolve to this same address.
+
+* Question :drill:
+What are Alias Records?
+
+** Answer
+Alias records are used to map resource record sets in your hosted zone to Elastic Load Blancers, CloudFront distributions, or S3 Buckets 
+that are configured as websites.
+
+Alias records work like a a CNAME record in that you can map one DNS name to another target DNS name.
+
+Key difference - A CNAME can't be used for naked domain names (zone apex record.) 
+You can't have a CNAME for http://example.com it must be either a A record or an Alias.
+
+
+* Question :drill:
+What are the different Routing Policies available on AWS?
+
+** Answer
+- Simple Routing
+- Weighted Routing
+- Latency-based Routing
+- Failover Routing
+- Geolocation Routing
+- Multivalue Answer Routing
+
+
+* Question :drill:
+What the Simple Routing Policy consists in?
+
+** Answer
+This is the default routing policy when you create a new record set. This is the most commonly used when you have a single recouce that performs
+a given function for your domain, for instance, one web server that serves content for the http://example.com.
+
+
+* Question :drill:
+What the Weighted Routing Policy consists in??
+
+** Answer
+Weighted Routing Policies let you split your traffic based on different weights assigned.
+For example, you can set 10% of your traffic to go to US-EAST-1 and 90% to go to EU-WEST-1.
+
+* Question :drill:
+What the Latency Based Routing Policy consists in??
+
+** Answer
+Latency based routing allows you to route your traffic based on the lowest network latency for your end user (ie which region will give 
+them the fastest response time). To use latency-based routing, you create a latency resource record set for the Amazon EC2 (or ELB) resource
+in each region that hosts your website. When AWS Route 53 receives a query for your site, it selects the latency resource record set for the region
+that gives the user the lowest latency. Route 53 then responds with the value associated with that resource record set.
+
+* Question :drill:
+What the Failover Routing Policy consists in?
+
+** Answer
+Failover routing policies are used when you want to create an active/passive set up.
+
+For example, you may want your primary site to be in EU-WEST-2 and your secondary DR site in AP-SOUTHEAST-2.
+
+Route53 will monitor the health of your primary site using a health check.
+
+A health check monitors the health of your end points.
+
+
+* Question :drill:
+What the Geolocation Routing Policy consists in??
+
+** Answer
+Geolocation routing lets you choose where your traffic will be sent based on the geographic location of your users (ie the location from 
+which DNS queries originate). For example, you might want all queries from Europe to be routed to a fleet of EC2 instances that are specifically 
+configured for your European customers. These servers may have the local language of your European customers and all prices are displayed in Euros.
+
+* Question :drill:
+What the Multivalue Answer Routing Policy consists in?
+
+** Answer
+If you want to route traffic approximately randomly to multiple resources, such as web servers, you can create one multivalue answer
+record for each resource and, optionally associate an Amazon Route 53 health check with each record.
+
+For example, suppose you manage an HTTP web service with a dozen web servers that each have their own IP address. No one web server could handle 
+all the traffic, but if you create a dozen multivalue answer records, Amazon Route 53 responds to DNS queries with up to eight healthy records in 
+response to each DNS query. Amazon Route 53 gives different answer to different DNS resolvers. If a web server becomes unavailable after a 
+resolver caches a response, client software can try another IP address in the response.
