@@ -1,0 +1,1 @@
+# Material for the AWS CCP exam
